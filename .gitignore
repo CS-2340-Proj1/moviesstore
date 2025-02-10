@@ -1,0 +1,21 @@
+# Byte-compiled / Cached files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environment
+venv/
+.env/
+
+# Django migrations
+**/migrations/*.pyc
+**/migrations/*.py
+
+# Logs
+*.log
+*.sqlite3
+
+# IDE / Editor config
+.vscode/
+.idea/
+*.swp
