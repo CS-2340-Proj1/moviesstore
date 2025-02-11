@@ -20,5 +20,4 @@ venv/
 .idea/
 *.swp
 
-db.sqlite3
-db.sqlite3
+
