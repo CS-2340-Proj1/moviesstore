@@ -126,7 +126,6 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
     BASE_DIR / 'static',
 ]
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
@@ -144,20 +143,5 @@ EMAIL_USE_TLS = True  # Set to False if you're using SSL on port 465
 EMAIL_HOST_USER = 'postmaster@sandbox2a5a4df7502844b0b90b4aa9d04df91b.mailgun.org'     # e.g., postmaster@YOUR_DOMAIN_NAME
 EMAIL_HOST_PASSWORD = 'cs2340'  # Your Mailgun SMTP password
 DEFAULT_FROM_EMAIL = 'postmaster@sandbox2a5a4df7502844b0b90b4aa9d04df91b.mailgun.org'
-LOGGING = {
-    'version': 1,
-    'disable_existing_loggers': False,
-    'handlers': {
-        'console': {
-            'class': 'logging.StreamHandler',
-        },
-    },
-    'loggers': {
-        'django.core.mail': {
-            'handlers': ['console'],
-            'level': 'DEBUG',
-            'propagate': True,
-        },
-    },
-}
+
 
