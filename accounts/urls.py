@@ -29,4 +29,6 @@ urlpatterns = [
              template_name='accounts/registration/password_reset_complete.html'
          ),
          name='password_reset_complete'),
+
+    path('orders/', views.orders, name='accounts.orders'),
 ]

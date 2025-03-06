@@ -1,6 +1,5 @@
 .bg-index{
-    background: url("/static/img/background.jpg") no-repeat
-      fixed;
+    background: url("/static/img/background.jpg") no-repeat fixed;
     background-size: 100% auto;
   }
 .navbar a.nav-link {
@@ -32,10 +31,24 @@
     color: #fff;
 }
 .img-card-200 {
-  width: fit-content;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
   max-height: 200px;
+  object-fit: contain; /* ensures the image maintains its aspect ratio */
 }
 .img-card-400 {
-  width: fit-content;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
   max-height: 400px;
+  object-fit: contain;
+}
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
 }

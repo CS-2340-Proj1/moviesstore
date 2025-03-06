@@ -11,8 +11,7 @@ def index(request):
     template_data = {}
     template_data['title'] = 'Movies'
     template_data['movies'] = movies
-    return render(request, 'movies/index.html',
-                  {'template_data': template_data})
+    return render(request, 'movies/index.html',{'template_data': template_data})
 
 def show(request, id):
     movie = Movie.objects.get(id=id)
@@ -21,8 +20,7 @@ def show(request, id):
     template_data['title'] = movie.name
     template_data['movie'] = movie
     template_data['reviews'] = reviews
-    return render(request, 'movies/show.html',
-                  {'template_data': template_data})
+    return render(request, 'movies/show.html',{'template_data': template_data})
 
 @login_required
 def create_review(request, id):
